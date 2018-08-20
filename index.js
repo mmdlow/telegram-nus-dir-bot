@@ -5,8 +5,8 @@ const Telegram = require('telegram-node-bot'),
 		workers: 1
 	});
 
-const PingController = require('./controllers/ping');
+const StartController = require('./controllers/start');
 const OtherwiseController = require('./controllers/otherwise');
 
-tg.router.when(new Telegram.TextCommand('/ping', 'pingCommand'), new PingController())
+tg.router.when(new Telegram.TextCommand('/start', 'startCommand'), new StartController())
 	.otherwise(new OtherwiseController());

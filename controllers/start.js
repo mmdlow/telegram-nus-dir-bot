@@ -5,7 +5,7 @@ const Telegram = require('telegram-node-bot');
 class StartController extends Telegram.TelegramBaseController {
 	startHandler($) {
 		$.runInlineMenu({
-			layout: 2,
+			layout: 1,
 			method: 'sendMessage',
 			params: ['Hello! Welcome to the NUS Online Directory :)\
 				\n\nTo begin, select a category:'],

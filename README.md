@@ -5,7 +5,7 @@ By: Matthew Low
 A centralized directory that provides access to all online NUS-related webpages, portals and repositories, packaged in an easy-to-use telegram bot.
 
 ## STRUCTURE
- * *START PAGE* (access with _/start_)
+ * **START PAGE** (access with _/start_)
      - ACADEMIC
          + CORS
          + IVLE
@@ -51,5 +51,5 @@ A centralized directory that provides access to all online NUS-related webpages,
          + AIMS
          + Email
          + NUSync
- * *HELP PAGE* (access with _/help_)
- * *SETTINGS PAGE* (access with _/settings_)
+ * **HELP PAGE** (access with _/help_)
+ * **SETTINGS PAGE** (access with _/settings_)

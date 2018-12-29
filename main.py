@@ -1,4 +1,5 @@
 import telebot
+import telebot.types as types
 import time
 
 # Get bot token
@@ -15,7 +16,21 @@ bot = telebot.TeleBot(token = token)
 # Handle /start command
 @bot.message_handler(commands = ['start'])
 def send_welcome(msg):
-	bot.send_message(msg.chat.id, 'Your wish is my command ;)')
+
+	markup = types.InlineKeyboardMarkup()
+	academic = types.InlineKeyboardButton('Academic', callback_data = 'academic')
+	facilities = types.InlineKeyboardButton('Facilities', callback_data = 'facilities')
+	faculties = types.InlineKeyboardButton('Faculties', callback_data = 'faculties')
+	residences = types.InlineKeyboardButton('Residences', callback_data = 'residences')
+	
+	markup.row(academic)
+	markup.row(facilities)
+	markup.row(faculties)
+	markup.row(residences)
+
+	bot.send_message(msg.chat.id, 
+		'Hello! Welcome to the NUS Unified Online Directory :)\n\nTo begin, select a category:\n',
+		reply_markup = markup)
 
 # Handle all other messages
 @bot.message_handler(func = lambda msg: True)

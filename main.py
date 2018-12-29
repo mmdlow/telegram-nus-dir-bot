@@ -29,8 +29,15 @@ def send_welcome(msg):
 	markup.row(residences)
 
 	bot.send_message(msg.chat.id, 
-		'Hello! Welcome to the NUS Unified Online Directory :)\n\nTo begin, select a category:\n',
+		'Hello! Welcome to the NUS Unified Online Directory :)\n\nTo begin, select a category:',
 		reply_markup = markup)
+
+# Handle inline queries from /start command
+@bot.callback_query_handler(func = lambda call: True)
+def start_callback(call):
+	print('User selected ' + call.data + ' category')
+	bot.answer_callback_query(call.id)
+	bot.send_message(call.message.chat.id, f'You selected the {call.data} category.\n\nNext, choose a subcategory:')
 
 # Handle all other messages
 @bot.message_handler(func = lambda msg: True)

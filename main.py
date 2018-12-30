@@ -2,6 +2,17 @@ import telebot
 import telebot.types as types
 import time
 
+acad_links = {
+'CORS': 'http://www.cors.nus.edu.sg/',
+'EduRec': 'https://myisis.nus.edu.sg/psp/cs90prd/?cmd=login',
+'IVLE': 'https://ivle.nus.edu.sg/default.aspx',
+'LumiNus': 'https://luminus.nus.edu.sg/',
+'NUS Libraries': 'https://libportal.nus.edu.sg/frontend/index',
+'Nusmods': 'https://nusmods.com/'
+}
+
+link_dict = {'academic': acad_links}
+
 # Get bot token
 try:
 	token_file = open('secret.txt', 'r')
@@ -36,8 +47,15 @@ def send_welcome(msg):
 @bot.callback_query_handler(func = lambda call: True)
 def start_callback(call):
 	print('User selected ' + call.data + ' category')
+
+	markup = types.InlineKeyboardMarkup()
+	category = link_dict[call.data]
+	for key in category.keys():
+		markup.row(types.InlineKeyboardButton(key, url = category[key]))
+
 	bot.answer_callback_query(call.id)
-	bot.send_message(call.message.chat.id, f'You selected the {call.data} category.\n\nNext, choose a subcategory:')
+	bot.send_message(call.message.chat.id, f'You selected the {call.data} category.\n\nNext, choose a subcategory:',
+		reply_markup = markup)
 
 # Handle all other messages
 @bot.message_handler(func = lambda msg: True)

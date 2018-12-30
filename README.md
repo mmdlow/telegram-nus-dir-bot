@@ -10,7 +10,7 @@ A centralized directory that provides access to all online NUS-related webpages,
          + CORS
          + IVLE
          + LumiNus
-         + MyIsis
+         + EduRec (MyIsis)
          + NUS Libraries
          + Nusmods
      - FACILITIES

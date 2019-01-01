@@ -11,7 +11,18 @@ acad_links = {
 'Nusmods': 'https://nusmods.com/'
 }
 
-link_dict = {'academic': acad_links}
+faci_links = {}
+facu_links = {}
+resd_links = {}
+misc_links = {}
+
+link_dict = {
+'academic': acad_links,
+'facilities': faci_links,
+'faculties': facu_links,
+'residences': resd_links,
+'miscellaneous': misc_links
+}
 
 # Get bot token
 try:
@@ -29,22 +40,19 @@ bot = telebot.TeleBot(token = token)
 def send_welcome(msg):
 
 	markup = types.InlineKeyboardMarkup()
-	academic = types.InlineKeyboardButton('Academic', callback_data = 'academic')
-	facilities = types.InlineKeyboardButton('Facilities', callback_data = 'facilities')
-	faculties = types.InlineKeyboardButton('Faculties', callback_data = 'faculties')
-	residences = types.InlineKeyboardButton('Residences', callback_data = 'residences')
 	
-	markup.row(academic)
-	markup.row(facilities)
-	markup.row(faculties)
-	markup.row(residences)
+	markup.row(types.InlineKeyboardButton('Academic', callback_data = 'academic'))
+	markup.row(types.InlineKeyboardButton('Facilities', callback_data = 'facilities'))
+	markup.row(types.InlineKeyboardButton('Faculties', callback_data = 'faculties'))
+	markup.row(types.InlineKeyboardButton('Residences', callback_data = 'residences'))
+	markup.row(types.InlineKeyboardButton('Miscellaneous', callback_data = 'miscellaneous'))
 
 	bot.send_message(msg.chat.id, 
 		'Hello! Welcome to the NUS Unified Online Directory :)\n\nTo begin, select a category:',
 		reply_markup = markup)
 
-# Handle inline queries from /start command
-@bot.callback_query_handler(func = lambda call: True)
+# Handle inline queries from /start command (5 main categories only))
+@bot.callback_query_handler(func = lambda call: call.data in link_dict.keys())
 def start_callback(call):
 	print('User selected ' + call.data + ' category')
 

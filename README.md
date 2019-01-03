@@ -16,6 +16,9 @@ A centralized directory that provides access to all online NUS-related webpages,
      - FACILITIES
          + Parking
          + Bookings
+            * Kent Ridge
+            * U Town
+            * Sports Facilities
      - FACULTIES
          + BIZ
          + COM

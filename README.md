@@ -4,6 +4,8 @@ By: Matthew Low
 ## ABOUT
 A centralized directory that provides access to all online NUS-related webpages, portals and repositories, packaged in an easy-to-use telegram bot.
 
+Developed in Python 3.6, using [pyTelegramBotAPI](https://github.com/eternnoir/pyTelegramBotAPI)
+
 ## STRUCTURE
  * **START PAGE** (access with _/start_)
      - ACADEMIC

@@ -26,11 +26,11 @@ resd = {}
 misc = {}
 
 link_dict = {
-'academic': acad,
-'facilities': faci,
-'faculties': facu,
-'residences': resd,
-'miscellaneous': misc
+'Academic': acad,
+'Facilities': faci,
+'Faculties': facu,
+'Residences': resd,
+'Miscellaneous': misc
 }
 
 # ONLY USE TO LOOK FOR CALLBACK DATA AS A KEYWORD
@@ -68,12 +68,9 @@ bot = telebot.TeleBot(token = token)
 def send_welcome(msg):
 
 	markup = types.InlineKeyboardMarkup()
-	
-	markup.row(types.InlineKeyboardButton('Academic', callback_data = 'academic'))
-	markup.row(types.InlineKeyboardButton('Facilities', callback_data = 'facilities'))
-	markup.row(types.InlineKeyboardButton('Faculties', callback_data = 'faculties'))
-	markup.row(types.InlineKeyboardButton('Residences', callback_data = 'residences'))
-	markup.row(types.InlineKeyboardButton('Miscellaneous', callback_data = 'miscellaneous'))
+
+	for key in link_dict.keys():
+		markup.row(types.InlineKeyboardButton(key, callback_data = key))
 
 	bot.send_message(msg.chat.id, 
 		'Hello! Welcome to the NUS Unified Online Directory :)\n\nTo begin, select a category:',

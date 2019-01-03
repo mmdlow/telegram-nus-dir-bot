@@ -52,6 +52,20 @@ Developed in Python 3.6, using [pyTelegramBotAPI](https://github.com/eternnoir/p
          + Hostel Management
          + Module Registration
          + Residence Homepages
+             * Eusoff Hall
+             * Kent Ridge Hall
+             * King Edward VII Hall
+             * Raffles Hall
+             * Sheares Hall
+             * Temasek Hall
+             * PGP House
+             * Cinammon College
+             * Tembusu College
+             * College Of Alice & Peter Tan
+             * Residential College 4
+             * Ridge View Residential College
+             * Prince George's Park Residences
+             * UTown Residence
      - OTHERS
          + AIMS
          + Email

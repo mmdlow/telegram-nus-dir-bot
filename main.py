@@ -11,7 +11,10 @@ acad_links = {
 'Nusmods': 'https://nusmods.com/'
 }
 
-faci_links = {}
+faci_links = {
+'Parking': 'https://uci.nus.edu.sg/oca/transport-logistics-carpark/parking-information-for-visitors/'
+}
+
 facu_links = {}
 resd_links = {}
 misc_links = {}
@@ -64,6 +67,13 @@ def start_callback(call):
 	bot.answer_callback_query(call.id)
 	bot.send_message(call.message.chat.id, f'You selected the {call.data} category.\n\nNext, choose a subcategory:',
 		reply_markup = markup)
+
+# # Handle direct text search queries
+# # User sends messages without any '/'-prefixed commands, e.g. 'Cors'
+# # Acad only
+# @bot.message_handler(func = lambda msg: True)
+# def handle_direct_search(msg):
+# 	return 
 
 # Handle all other messages
 @bot.message_handler(func = lambda msg: True)

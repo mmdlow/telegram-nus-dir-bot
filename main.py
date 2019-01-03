@@ -46,10 +46,9 @@ def send_welcome(msg):
 		'Hello! Welcome to the NUS Unified Online Directory :)\n\nTo begin, select a category:',
 		reply_markup = markup)
 
-# Handle inline queries from /start command (5 main categories only))
-# @bot.callback_query_handler(func = lambda call: call.data in link_dict.keys())
+# Handle all inline queries
 @bot.callback_query_handler(func = lambda call: True)
-def start_callback(call):
+def handle_callback(call):
 	bot.answer_callback_query(call.id)
 
 	# Search for call.data as a keyword nested somewhere in link_dict

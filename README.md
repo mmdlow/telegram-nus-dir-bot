@@ -15,7 +15,7 @@ A centralized directory that provides access to all online NUS-related webpages,
          + Nusmods
      - FACILITIES
          + Parking
-         + Bookings
+         + Bookings (Must be connected to NUS VPN for first 2)
             * Kent Ridge
             * U Town
             * Sports Facilities

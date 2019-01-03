@@ -17,7 +17,38 @@ faci = {
 }
 }
 
-facu = {}
+# Needs updating to include all related sites, e.g. mysoc
+# Needs to expand to include all departments
+facu = {
+'Architecture': 'http://www.arch.nus.edu.sg/',
+'Business & Accountancy': 'http://bba.nus.edu/',
+'Computing': 'https://www.comp.nus.edu.sg/',
+'Dentistry': 'http://www.dentistry.nus.edu.sg/',
+'Duke-NUS': 'https://www.duke-nus.edu.sg/',
+'Engineering': 'https://www.eng.nus.edu.sg/'
+'Industrial Design': 'http://did.nus.edu.sg/',
+'Law': 'http://law.nus.edu.sg/',
+'Medicine': 'http://nusmedicine.nus.edu.sg/'
+'Music': 'https://www.ystmusic.nus.edu.sg/'
+'Nursing': 'http://medicine.nus.edu.sg/nursing/'
+'Project & Facilities Management': 'http://www.bdg.nus.edu.sg/undergraduate/PFM-introduction.html',
+'Real Estate': 'http://www.rst.nus.edu.sg/index.html'
+'Science':
+{
+	'Chemistry': 'http://www.chemistry.nus.edu.sg/',
+	'Computational Biology': 'http://www.science.nus.edu.sg/undergraduate-studies/ugprog/primary-majors/174-undergraduate/ugprog/554-computational-biology',
+	'Data Science': 'https://www.stat.nus.edu.sg/index.php/prospective-students/undergraduate-programme/data-science-and-analytics',
+	'Environmental Science': 'http://www.envstudies.nus.edu.sg/',
+	'Food Science': 'http://www.fst.nus.edu.sg/',
+	'Life Sciences': 'http://www.lifesciences.nus.edu.sg/',
+	'Mathematics': 'http://ww1.math.nus.edu.sg/default.aspx',
+	'Pharmacy': 'http://pharmacy.nus.edu.sg/',
+	'Physics': 'http://www.physics.nus.edu.sg/',
+	'Quantitative Finance': 'http://www.nus.edu.sg/nusbulletin/faculty-of-science/undergraduate-education/degree-requirements/bachelor-of-sciencebachelor-of-science-hons-programme-requirements-b-sc-b-sc-hons/quantitative-finance/',
+	'Statistics': 'https://www.stat.nus.edu.sg/index.php/current-students/undergraduate-programme/programme-structure',
+	'University Scholars Programme': 'http://www.usp.nus.edu.sg/'
+}
+}
 
 resd = {
 'Air Conditioning Management': 'https://nus-utown.evs.com.sg/',

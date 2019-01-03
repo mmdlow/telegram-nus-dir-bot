@@ -22,6 +22,7 @@ Developed in Python 3.6, using [pyTelegramBotAPI](https://github.com/eternnoir/p
             * U Town
             * Sports Facilities
      - FACULTIES
+         + Archi
          + BIZ
          + COM
          + Dentistry
@@ -29,6 +30,7 @@ Developed in Python 3.6, using [pyTelegramBotAPI](https://github.com/eternnoir/p
          + ENG
          + FASS
              * _Various Departments_
+         + ID
          + Law
          + Medicine
          + Music
@@ -37,7 +39,6 @@ Developed in Python 3.6, using [pyTelegramBotAPI](https://github.com/eternnoir/p
          + Public Policy
          + SCALE
          + Science
-         + SDE
          + USP
          + Others:
              * CQT

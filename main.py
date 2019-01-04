@@ -46,6 +46,12 @@ def send_welcome(msg):
 		'Hello! Welcome to the NUS Unified Online Directory :)\n\nTo begin, select a category:',
 		reply_markup = markup)
 
+# Handle /help command
+@bot.message_handler(commands = ['help'])
+def send_help(msg):
+	bot.send_message(msg.chat.id,
+		'How to use this bot:\n\n1. Enter /start to access the main directory with the categories:\nAcademic\nFacilities\nFaculties\nResidences\nMiscellaneous\n\n2. Select the appropriate option to access either a link to the desired webpage or another subcategory')
+
 # Handle all inline queries
 @bot.callback_query_handler(func = lambda call: True)
 def handle_callback(call):

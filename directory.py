@@ -21,18 +21,21 @@ faci = {
 # Needs to expand to include all departments
 facu = {
 'Architecture': 'http://www.arch.nus.edu.sg/',
+'Arts & Social Sciences': 'http://www.fas.nus.edu.sg/',
 'Business & Accountancy': 'http://bba.nus.edu/',
 'Computing': 'https://www.comp.nus.edu.sg/',
 'Dentistry': 'http://www.dentistry.nus.edu.sg/',
 'Duke-NUS': 'https://www.duke-nus.edu.sg/',
-'Engineering': 'https://www.eng.nus.edu.sg/'
+'Engineering': 'https://www.eng.nus.edu.sg/',
 'Industrial Design': 'http://did.nus.edu.sg/',
 'Law': 'http://law.nus.edu.sg/',
-'Medicine': 'http://nusmedicine.nus.edu.sg/'
-'Music': 'https://www.ystmusic.nus.edu.sg/'
-'Nursing': 'http://medicine.nus.edu.sg/nursing/'
+'Medicine': 'http://nusmedicine.nus.edu.sg/',
+'Music': 'https://www.ystmusic.nus.edu.sg/',
+'Nursing': 'http://medicine.nus.edu.sg/nursing/',
 'Project & Facilities Management': 'http://www.bdg.nus.edu.sg/undergraduate/PFM-introduction.html',
-'Real Estate': 'http://www.rst.nus.edu.sg/index.html'
+'Public Health': 'https://www.sph.nus.edu.sg/',
+'Public Policy': 'https://lkyspp.nus.edu.sg/',
+'Real Estate': 'http://www.rst.nus.edu.sg/index.html',
 'Science':
 {
 	'Chemistry': 'http://www.chemistry.nus.edu.sg/',
@@ -45,9 +48,9 @@ facu = {
 	'Pharmacy': 'http://pharmacy.nus.edu.sg/',
 	'Physics': 'http://www.physics.nus.edu.sg/',
 	'Quantitative Finance': 'http://www.nus.edu.sg/nusbulletin/faculty-of-science/undergraduate-education/degree-requirements/bachelor-of-sciencebachelor-of-science-hons-programme-requirements-b-sc-b-sc-hons/quantitative-finance/',
-	'Statistics': 'https://www.stat.nus.edu.sg/index.php/current-students/undergraduate-programme/programme-structure',
-	'University Scholars Programme': 'http://www.usp.nus.edu.sg/'
-}
+	'Statistics': 'https://www.stat.nus.edu.sg/index.php/current-students/undergraduate-programme/programme-structure'
+},
+'University Scholars Programme': 'http://www.usp.nus.edu.sg/'
 }
 
 resd = {

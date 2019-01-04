@@ -73,7 +73,12 @@ resd = {
 }
 }
 
-misc = {}
+misc = {
+'AIMS': 'https://inetapps.nus.edu.sg/osh/portal/eServices/ehs360_aims.html',
+'NUS email': 'https://exchange.nus.edu.sg/',
+'NUSync': 'https://orgsync.com/login/national-university-of-singapore',
+'NUS Whispers': 'https://www.nuswhispers.com/home/'
+}
 
 # OUTERMOST LAYER
 # Contains all 5 main categories

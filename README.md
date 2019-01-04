@@ -1,12 +1,12 @@
-# TELEGRAM NUS ONLINE DIRECTORY BOT  
-By: Matthew Low
+# NUS ONLINE DIRECTORY: a telegram bot  
+By Matthew Low
 
 ## ABOUT
 A centralized directory that provides access to all online NUS-related webpages, portals and repositories, packaged in an easy-to-use telegram bot.
 
 Developed in Python 3.6, using [pyTelegramBotAPI](https://github.com/eternnoir/pyTelegramBotAPI)
 
-## STRUCTURE
+## NAVIGATION
 ### START PAGE (_/start_)
  - __ACADEMIC__
      + CORS
@@ -22,23 +22,36 @@ Developed in Python 3.6, using [pyTelegramBotAPI](https://github.com/eternnoir/p
         * U Town
         * Sports Facilities
  - __FACULTIES__
-     + Archi
-     + BIZ
-     + COM
+     + Architecture (SDE)
+     + Arts & Social Sciences
+     + Business & Accountancy
+     + Computing
      + Dentistry
      + Duke-NUS
-     + ENG
-     + FASS
-         * _Various Departments_
-     + ID
+     + Engineering
+     + Industrial Design (SDE)
      + Law
      + Medicine
      + Music
-     + NGS
+     + NGS (_coming soon_)
+     + Nursing
+     + Project & Facilities Management (SDE)
      + Public Health
      + Public Policy
-     + SCALE
+     + SCALE (_coming soon_)
+     + Real Estate (SDE)
      + Science
+         * Chemistry
+         * Computational Biology
+         * Data Science
+         * Environmental Science
+         * Food Science
+         * Life Sciences
+         * Mathematics
+         * Pharmacy
+         * Physics
+         * Quantitative Finance
+         * Statistics
      + USP
      + Others:
          * CQT
@@ -71,6 +84,7 @@ Developed in Python 3.6, using [pyTelegramBotAPI](https://github.com/eternnoir/p
      + AIMS
      + Email
      + NUSync
+     + NUS Whispers
 
 ### HELP PAGE (_/help_)
 ### SETTINGS PAGE (_/settings_)

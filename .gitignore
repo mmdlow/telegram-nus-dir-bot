@@ -1,3 +1,4 @@
 secret.txt
 __pycache__/
 nusbot/
+env/

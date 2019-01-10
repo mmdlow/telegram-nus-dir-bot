@@ -1,3 +1,4 @@
+import os
 import telebot
 import telebot.types as types
 import time
@@ -23,12 +24,18 @@ def keyword_search(dictionary, word):
 
 
 # Get bot token
-try:
-	token_file = open('secret.txt', 'r')
-	token = token_file.read()
-	token_file.close()
-except Exception:
-	print('Couldn\'nt get bot token')
+
+# Get token from Heroku config var
+token = os.environ.get('API_TOKEN')
+
+# If running locally, get from secret.txt
+if token is None:
+	try:
+		token_file = open('secret.txt', 'r')
+		token = token_file.read()
+		token_file.close()
+	except Exception as e:
+		print('Couldn\'nt get bot token: ' + e)
 
 # Create TeleBot instance
 bot = telebot.TeleBot(token = token)

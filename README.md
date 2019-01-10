@@ -3,6 +3,7 @@ By Matthew Low
 
 ## ABOUT
 A centralized directory that provides access to all online NUS-related webpages, portals and repositories, packaged in an easy-to-use telegram bot.
+Test it out now: [@NUSDirBot](https://telegram.me/NUSDirBot)
 
 Developed in Python 3.6, using [pyTelegramBotAPI](https://github.com/eternnoir/pyTelegramBotAPI)
 
@@ -88,3 +89,18 @@ Developed in Python 3.6, using [pyTelegramBotAPI](https://github.com/eternnoir/p
 
 ### HELP PAGE (_/help_)
 ### SETTINGS PAGE (_/settings_)
+
+## INSTALLATION
+Ensure that you have Python (preferably 3.x) and pip installed
+Clone the repo
+Install pyTelegramBotAPI
+```
+sudo python -m pip install pyTelegramBotAPI
+```
+Obtain your telegram bot token from Botfather
+Create a new file "secret.txt" in the main directory, and paste the token inside it
+Finally, run your bot
+```
+python main.py
+```
+Enjoy!

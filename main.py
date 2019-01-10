@@ -102,9 +102,9 @@ def send_default(msg):
 	bot.send_message(msg.chat.id, 'Sorry, I didn\'t quite get that')
 
 # Run the bot
-while True:
-	try:
-		bot.polling()
-	except Exception:
-		# Bot sleeps for 15 seconds in case of error
-		time.sleep(15)
+try:
+	bot.polling(none_stop = True)
+except Exception as e:
+	# Bot sleeps for 15 seconds in case of error
+	print(e)
+	time.sleep(15)

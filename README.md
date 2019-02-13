@@ -88,7 +88,6 @@ Developed in Python 3.6, using [pyTelegramBotAPI](https://github.com/eternnoir/p
      + NUS Whispers
 
 ### HELP PAGE (_/help_)
-### SETTINGS PAGE (_/settings_)
 
 ## INSTALLATION
 Ensure that you have Python (preferably 3.x) and pip installed  
